@@ -17,8 +17,6 @@
 <% ResourceBundle resource = ResourceBundle.getBundle("config");
   String login=resource.getString("login");
   String password=resource.getString("password"); %>
-  <%=login %>
- <%=password %>
 <% 
     BufferedReader br=request.getReader();
     StringBuilder sb=new StringBuilder();
@@ -31,7 +29,7 @@
     text=sb.toString();
     text=text.replaceAll("><","> <");
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cartoline?useUnicode=true&characterEncoding=utf-8&user=***&password=***");    
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cartoline?useUnicode=true&characterEncoding=utf-8&user="+login+"&password="+password);    
     con.setAutoCommit(false);
     Statement stmt = con.createStatement();
     stmt.executeUpdate("update annotations set annotation_content='"+text+"' where annotation_id='"+target+"';");
