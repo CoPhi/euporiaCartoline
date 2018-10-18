@@ -10,8 +10,15 @@
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
+<%@ page language="java" import="java.util.*" %> 
+<%@ page import = "java.util.ResourceBundle" %>
 
 <!DOCTYPE html>
+<% ResourceBundle resource = ResourceBundle.getBundle("config");
+  String login=resource.getString("login");
+  String password=resource.getString("password"); %>
+  <%=login %>
+ <%=password %>
 <% 
     BufferedReader br=request.getReader();
     StringBuilder sb=new StringBuilder();
