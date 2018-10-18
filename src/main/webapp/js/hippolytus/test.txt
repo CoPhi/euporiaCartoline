@@ -1,0 +1,11 @@
+* 73 ἀκηράτου ... λειμῶνος : #evidence this_λειμών_ἀκήρατος is_a ritual_space ; is_sacred_to Artemis .  #ontology λειμών_ἀκήρατος is_associated_to limes . #association limes is_associated_to initiation_of_virgins, ritual_rape . limes is_sacred_to Artemis . initiation_of_virgins is_sacred_to Aphrodite . ritual_rape is_sacred_to Aphrodite @bibl:Bremer1975 @bibl:Heirman2012 . 
+* 81 δρέπεσθαι : #evidence δρέπω is_a ritual_action ; is_dedicated_to Artemis . #ontology is_related_to flower . #association δρέπω is_associated_to picking_flower , initiation_of_virgins , ritual_rape @bibl:hHomDem514 . picking_flower is_sacred_to Aphrodite ; is_related_to flower . initiation_of_virgins is_sacred_to Aphrodite . ritual_rape is_sacred to Aphrodite @bibl:Bremer1975 .
+* 90 σοφοὶ : @vi:100_1 a b c .
+* 40 σοφοὶ : {@vi:100_1} subjectx predicatex objectx .
+* 2 οὐρανοῦ : #ontology sky is_sacred_to Aphrodites . //confronta con v. 59 epiteto Artemide
+* 3 Πόντου ... Ἀτλαντικῶν : #ontology sea is_sacred_to Aphrodites .
+* 17 χλωρὰν ... 18 χθονός : this_wood is_associated_to Hippolytus . #ontology hunt is_sacred_to Artemis; is_associated_to ephebia .
+* 17  χλωρὰν δ’ ἀν’ ὕλην : this_wood is_sacred_to Artemis; is_associated_to hunt.
+* 18 θῆρας ἐξαιρεῖ χθονός : Hippolytus is_associated_to hunt . #ontology hunt is_sacred_to Artemis; is_associated_to ephebia .
+* 36 ναυστολεῖ : @vl:36_1 x y z . is_associated_to Theseus . #ontology sail is_sacred_to Aphrodites @bibl:Demetiou2010 .
+* 44 ὁ πόντιος 45 ἄναξ : πόντιος is_a epithete; is_associated_to sea, Poseidon, Aphrodite.
