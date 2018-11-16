@@ -125,7 +125,7 @@
                     <tr>
                         <td colspan="2" class="header">
                             <br/>
-                            <div style="white-space:pre; overflow-x:hidden; overflow-y:auto;" spellcheck="false" contentEditable="false" id="an${rs.rows[0].part_id}" onclick="state('${rs.rows[0].part_id}')"><pre><code>${rs.rows[0].annotation_content}</code></pre></div>
+                            <div style="overflow-x:hidden; overflow-y:auto;" spellcheck="false" contentEditable="false" id="an${rs.rows[0].part_id}" onclick="state('${rs.rows[0].part_id}')"><pre><code>${rs.rows[0].annotation_content}</code></pre></div>
                             <button id="b${rs.rows[0].part_id}" onClick="add('${rs.rows[0].part_id}')">Saved</button>
                         </td>
                     </tr>
@@ -135,7 +135,7 @@
                         </td>
                         <td class="anno">
                             <br/>
-                            <div style="white-space:pre; overflow-x:hidden; overflow-y:auto;" spellcheck="false" contentEditable="false" id="an${rs.rows[1].part_id}" onclick="state('${rs.rows[1].part_id}')"><pre><code>${rs.rows[1].annotation_content}</code></pre></div>
+                            <div style="overflow-x:hidden; overflow-y:auto;" spellcheck="false" contentEditable="false" id="an${rs.rows[1].part_id}" onclick="state('${rs.rows[1].part_id}')"><pre><code>${rs.rows[1].annotation_content}</code></pre></div>
                             <button id="b${rs.rows[1].part_id}" onClick="add('${rs.rows[1].part_id}')">Saved</button>
                         </td>
                     </tr>
@@ -145,7 +145,7 @@
                         </td>
                         <td class="anno">
                             <br/>
-                            <div style="white-space:pre; overflow-x:hidden; overflow-y:auto;" spellcheck="false" contentEditable="false" id="an${rs.rows[2].part_id}" onclick="state('${rs.rows[2].part_id}')"><pre><code>${rs.rows[2].annotation_content}</code></pre></div>
+                            <div style="overflow-x:hidden; overflow-y:auto;" spellcheck="false" contentEditable="false" id="an${rs.rows[2].part_id}" onclick="state('${rs.rows[2].part_id}')"><pre><code>${rs.rows[2].annotation_content}</code></pre></div>
                             <button id="b${rs.rows[2].part_id}" onClick="add('${rs.rows[2].part_id}')">Saved</button>
                         </td>
                     </tr>

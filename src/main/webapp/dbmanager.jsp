@@ -28,6 +28,7 @@
     }
     text=sb.toString();
     text=text.replaceAll("><","> <");
+    text=text.replaceAll("'","’");
     Class.forName("com.mysql.jdbc.Driver");
     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cartoline?useUnicode=true&characterEncoding=utf-8&user="+login+"&password="+password);    
     con.setAutoCommit(false);
