@@ -6,11 +6,10 @@
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
 <%@page contentType="text/plain" pageEncoding="UTF-8"%>
 <%@page import="java.io.BufferedReader"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
-<%@ page language="java" import="java.util.*" %> 
+<%@ page language="java" import="java.util.*" %>
 <%@ page import = "java.util.ResourceBundle" %>
 
 <!DOCTYPE html>
@@ -32,8 +31,10 @@
     Class.forName("com.mysql.jdbc.Driver");
     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cartoline?useUnicode=true&characterEncoding=utf-8&user="+login+"&password="+password);    
     con.setAutoCommit(false);
-    Statement stmt = con.createStatement();
-    stmt.executeUpdate("update annotations set annotation_content='"+text+"' where annotation_id='"+target+"';");
+    PreparedStatement stmt = con.prepareStatement("UPDATE annotations SET annotation_content=? WHERE annotation_id=?");
+    stmt.setString(1, text);
+    stmt.setString(2, target);
+    stmt.executeUpdate();
     con.commit();
     stmt.close();
     con.close();
